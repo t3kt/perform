@@ -3,6 +3,10 @@ perform
 
 Perform is a master system for hosting other generative systems, made with TouchDesigner.
 
+## Concepts/Glossary
+* Project - a (semi-)isolated generative rendering system
+* Host - a TouchDesigner project (toe) which hosts one or more dynamically loaded projects
+
 ## Goals
 * shared infrastructure for things like parameter mappings, midi, and post-processing
 * mix and combine output from multiple generative systems
@@ -21,6 +25,16 @@ Perform is a master system for hosting other generative systems, made with Touch
     * have a shared shell component for working with projects on their own
     * use scripting to automatically save nested tox files when saving projects
 
-## Concepts/Glossary/...
-* Project - a (semi-)isolated generative rendering system
-* Host - a TouchDesigner project (toe) which hosts one or more dynamically loaded projects
+## Shared Systems
+* MIDI controller routing/selection
+* Project/module loading/unloading
+* Output compositing
+* Shared post-processing (delay, saturation, other basic things), applied to composited output
+
+## Project Interface
+* Input
+    * Pre-processed MIDI input
+* Output
+    * A single video (TOP) stream
+* UI
+    * Control panel limited to a specific size (to be determined at some point)
