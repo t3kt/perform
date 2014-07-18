@@ -11,6 +11,7 @@ Perform is a master system for hosting other generative systems, made with Touch
 * performance
     * unload or disable unused subsystems
     * switches to bypass individual post-processing steps
+    * competition for GPU resources (and other resources for that matter) could be a problem
 * control ui
     * separate shared ui panels from project-specific panels and have areas for hosting the project-specific panels
 * midi mappings / sharing controllers between projects
@@ -20,3 +21,6 @@ Perform is a master system for hosting other generative systems, made with Touch
     * have a shared shell component for working with projects on their own
     * use scripting to automatically save nested tox files when saving projects
 
+## Concepts/Glossary/...
+* Project - a (semi-)isolated generative rendering system
+* Host - a TouchDesigner project (toe) which hosts one or more dynamically loaded projects
