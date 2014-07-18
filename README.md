@@ -31,6 +31,7 @@ Perform is a master system for hosting other generative systems, made with Touch
 * Output compositing
 * Shared post-processing (delay, saturation, other basic things), applied to composited output
 * Shared control parameters (like a general rate)
+* Output recording
 
 ## Project Interface
 * Input
