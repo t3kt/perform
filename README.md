@@ -34,10 +34,8 @@ Perform is a master system for hosting other generative systems, made with Touch
 * Output recording
 
 ## Project Interface
-* Input
-    * Pre-processed MIDI input
-* Output
-    * A single video (TOP) stream
-    * MIDI output (from control panel UI, etc)
-* UI
-    * Control panel limited to a specific size
+* Parameter table - global parameters filtered out by the host
+* Parameter value inputs - host handles midi mappings based on exposed parameter table
+* Single video (TOP) output stream
+* Parameter values output (from control panel UI, etc)
+* Control panel limited to a specific size
