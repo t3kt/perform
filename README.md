@@ -26,15 +26,17 @@ Perform is a master system for hosting other generative systems, made with Touch
     * use scripting to automatically save nested tox files when saving projects
 
 ## Shared Systems
-* MIDI controller routing/selection
+* MIDI controller input/output routing/selection
 * Project/module loading/unloading
 * Output compositing
 * Shared post-processing (delay, saturation, other basic things), applied to composited output
+* Shared control parameters (like a general rate)
 
 ## Project Interface
 * Input
     * Pre-processed MIDI input
 * Output
     * A single video (TOP) stream
+    * MIDI output (from control panel UI, etc)
 * UI
-    * Control panel limited to a specific size (to be determined at some point)
+    * Control panel limited to a specific size
